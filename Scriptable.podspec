@@ -8,14 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Scriptable'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Run any terminal command through macOS apps by conforming to Scriptable protocol'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.swift_version    = '5.0'
 
   s.description      = 'Create a GUI macOS app for more productivity to set all your commands and run them by conforming to Scriptable protocol and using runTask method, for more example check the attached example project'
 
