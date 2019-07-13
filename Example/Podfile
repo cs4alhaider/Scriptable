@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Scriptable_Example' do
+  pod 'Scriptable', :path => '../'
+
+  target 'Scriptable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
