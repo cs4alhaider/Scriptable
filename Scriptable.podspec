@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Scriptable'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Scriptable.'
+  s.summary          = 'Run any terminal command through macOS apps by conforming to Scriptable protocol'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,27 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Create a GUI macOS app for more productivity to set all your commands and run them by conforming to Scriptable protocol and using runTask method, for more example check the attached example project'
 
   s.homepage         = 'https://github.com/cs4alhaider/Scriptable'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'cs4alhaider' => 'cs.alhaider@gmail.com' }
   s.source           = { :git => 'https://github.com/cs4alhaider/Scriptable.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/cs_alhaider'
 
   s.platform = :osx
   s.osx.deployment_target = "10.10"
 
   s.source_files = 'Scriptable/Classes/**/*'
 
-  # s.resource_bundles = {
-  #   'Scriptable' => ['Scriptable/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'Cocoa'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

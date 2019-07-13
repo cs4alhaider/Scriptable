@@ -1,0 +1,6 @@
+framework module Pods_Scriptable_Tests {
+  umbrella header "Pods-Scriptable_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

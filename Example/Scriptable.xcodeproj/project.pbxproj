@@ -27,14 +27,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F3E3FFDD873C4C669BA03A4 /* Scriptable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Scriptable.podspec; path = ../Scriptable.podspec; sourceTree = "<group>"; };
+		0F3E3FFDD873C4C669BA03A4 /* Scriptable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Scriptable.podspec; path = ../Scriptable.podspec; sourceTree = "<group>"; };
 		135902242089DBAD7B168E9E /* Pods-Scriptable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scriptable_Tests.release.xcconfig"; path = "Target Support Files/Pods-Scriptable_Tests/Pods-Scriptable_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		420E30789B5BB607BE5005E0 /* Pods-Scriptable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scriptable_Example.debug.xcconfig"; path = "Target Support Files/Pods-Scriptable_Example/Pods-Scriptable_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0552AB285C6453FAA37E63 /* Pods-Scriptable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scriptable_Example.release.xcconfig"; path = "Target Support Files/Pods-Scriptable_Example/Pods-Scriptable_Example.release.xcconfig"; sourceTree = "<group>"; };
 		69615F368C8B92C17BE500A0 /* Pods-Scriptable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scriptable_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Scriptable_Tests/Pods-Scriptable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8ECC781383748207C0D0BC15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8ECC781383748207C0D0BC15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		989B411DFE597E9E6D2B26ED /* Pods_Scriptable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scriptable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8CE893B53DE7AA689386672 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A8CE893B53DE7AA689386672 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B2D57D788028131AEF33D851 /* Pods_Scriptable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scriptable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED83F67820348A760038D96B /* Scriptable_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scriptable_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED83F67B20348A760038D96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,7 +138,6 @@
 				69615F368C8B92C17BE500A0 /* Pods-Scriptable_Tests.debug.xcconfig */,
 				135902242089DBAD7B168E9E /* Pods-Scriptable_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,7 +152,7 @@
 				ED83F67420348A760038D96B /* Sources */,
 				ED83F67520348A760038D96B /* Frameworks */,
 				ED83F67620348A760038D96B /* Resources */,
-				33406AF01BE967CBCC92D4BF /* [CP] Embed Pods Frameworks */,
+				BA93436AAF46E810DAEC92F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,15 +189,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					ED83F67720348A760038D96B = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					ED83F68920348A760038D96B = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ED83F67720348A760038D96B;
 					};
@@ -243,24 +249,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		33406AF01BE967CBCC92D4BF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Scriptable_Example/Pods-Scriptable_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Scriptable/Scriptable.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Scriptable.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scriptable_Example/Pods-Scriptable_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		35549E5AF000BCAA21F3A5FE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +291,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA93436AAF46E810DAEC92F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Scriptable_Example/Pods-Scriptable_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Scriptable/Scriptable.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Scriptable.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Scriptable_Example/Pods-Scriptable_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -361,6 +367,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -368,6 +375,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -418,6 +426,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -425,6 +434,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -458,14 +468,13 @@
 			baseConfigurationReference = 420E30789B5BB607BE5005E0 /* Pods-Scriptable_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Scriptable/Scriptable.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Scriptable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.Scriptable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -474,14 +483,13 @@
 			baseConfigurationReference = 5E0552AB285C6453FAA37E63 /* Pods-Scriptable_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Scriptable/Scriptable.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Scriptable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.Scriptable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -497,7 +505,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.Scriptable-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "";
 			};
 			name = Debug;
@@ -514,7 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.Scriptable-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "";
 			};
 			name = Release;

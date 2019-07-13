@@ -10,6 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+Make sure to disable App Sandbox in your Cocoa Application (found under your Project app target > Capabilities tab > App Sandbox switch). If you didn't disable it you'll find that you're being blocked by a sandbox exception. 
 
 ## Installation
 

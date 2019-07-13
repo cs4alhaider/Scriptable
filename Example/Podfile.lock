@@ -1,0 +1,16 @@
+PODS:
+  - Scriptable (0.1.0)
+
+DEPENDENCIES:
+  - Scriptable (from `../`)
+
+EXTERNAL SOURCES:
+  Scriptable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Scriptable: 635bde320f63572efc802ec7a4f783f5acbe5518
+
+PODFILE CHECKSUM: 5baafb4197db9ec939d61be247aea5b82afd3f98
+
+COCOAPODS: 1.7.3
