@@ -76,7 +76,7 @@
 		DDF833A522DA17890048C844 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		DDF833A722DA179D0048C844 /* Network+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Task.swift"; sourceTree = "<group>"; };
 		DDF833AB22DA1CBA0048C844 /* App+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Task.swift"; sourceTree = "<group>"; };
-		DDF833AD22DA1CDC0048C844 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DDF833AD22DA1CDC0048C844 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Scriptable/Classes/Extensions.swift; sourceTree = "<group>"; };
 		DDF833B122DA1D770048C844 /* Directory+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Directory+Task.swift"; sourceTree = "<group>"; };
 		DDF833B322DA1EC90048C844 /* Custom+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+Task.swift"; sourceTree = "<group>"; };
 		F0841966E82FBCCFB79E98EDFB96E114 /* Scriptable-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Scriptable-Info.plist"; sourceTree = "<group>"; };
@@ -197,6 +197,19 @@
 			);
 			sourceTree = "<group>";
 		};
+		DDF833B522DA2F0F0048C844 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				DDF833A522DA17890048C844 /* Task.swift */,
+				DDF833A722DA179D0048C844 /* Network+Task.swift */,
+				DDF833AB22DA1CBA0048C844 /* App+Task.swift */,
+				DDF833B122DA1D770048C844 /* Directory+Task.swift */,
+				DDF833B322DA1EC90048C844 /* Custom+Task.swift */,
+			);
+			name = Task;
+			path = Scriptable/Classes/Task;
+			sourceTree = "<group>";
+		};
 		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,12 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				D0857057373A2A8EF38CCEBCA48AB646 /* Scriptable.swift */,
-				DDF833A522DA17890048C844 /* Task.swift */,
-				DDF833A722DA179D0048C844 /* Network+Task.swift */,
-				DDF833AB22DA1CBA0048C844 /* App+Task.swift */,
-				DDF833B122DA1D770048C844 /* Directory+Task.swift */,
-				DDF833B322DA1EC90048C844 /* Custom+Task.swift */,
 				DDF833AD22DA1CDC0048C844 /* Extensions.swift */,
+				DDF833B522DA2F0F0048C844 /* Task */,
 				A83E26E65BC19647DB99C4AFAB75D33F /* Pod */,
 				7E61A1440ADB8A69F2178497B115252D /* Support Files */,
 			);
