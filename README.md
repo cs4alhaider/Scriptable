@@ -5,46 +5,48 @@
 [![License](https://img.shields.io/cocoapods/l/Scriptable.svg?style=flat)](https://cocoapods.org/pods/Scriptable)
 [![Platform](https://img.shields.io/cocoapods/p/Scriptable.svg?style=flat)](https://cocoapods.org/pods/Scriptable)
 
+Scriptable will allow you to run and automate your daily basis Terminal tasks through a macOS app.
+
 
 ## Scriptable protocol
 ```swift
 public protocol Scriptable {
-
-typealias ScriptResponce = (command: String, errorOutput: String?, dataOutput: String)
-
-/// The command you want to execute through your terminal
-///
-/// Keep in mind if you pass any aurgument with a space like:
-/// `open -a Some Application`
-/// you will need to remove the spaces between the app name "Some Application"
-var command: String { get }
-
-/// Run the task throue the terminal
-///
-/// - Returns: The output string for (command: String, errorOutput: String?, dataOutput: String)
-@discardableResult func runTask(launchPath: String) -> ScriptResponce
+    
+    typealias ScriptResponce = (command: String, errorOutput: String?, dataOutput: String)
+    
+    /// The command you want to execute through your terminal
+    ///
+    /// Keep in mind if you pass any aurgument with a space like:
+    /// `open -a Some Application`
+    /// you will need to remove the spaces between the app name "Some Application"
+    var command: String { get }
+    
+    /// Run the task throue the terminal
+    ///
+    /// - Returns: The output string for (command: String, errorOutput: String?, dataOutput: String)
+    @discardableResult func runTask(launchPath: String) -> ScriptResponce
 }
 ```
 ## Simple Example
 ```swift
 enum MySimpleCommands: Scriptable {
-
-case openDesktop
-
-var command: String {
-switch self {
-case .openDesktop:
-return "cd ~ && cd Desktop/ && open ."
-}
-}
+    
+    case openDesktop
+    
+    var command: String {
+        switch self {
+        case .openDesktop:
+            return "cd ~ && cd Desktop/ && open ."
+        }
+    }
 }
 
 class ViewController: NSViewController {
-
-override func viewDidLoad() {
-super.viewDidLoad()
-MySimpleCommands.openDesktop.runTask() // This will open your desktop folder
-}
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        MySimpleCommands.openDesktop.runTask() // This will open your desktop folder
+    }
 }
 ```
 
