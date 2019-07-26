@@ -14,6 +14,8 @@
 		7B58BDA2D536AF2C44540B7280325AB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
 		A918A0C379A901DF49F081C14765D65E /* Scriptable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0857057373A2A8EF38CCEBCA48AB646 /* Scriptable.swift */; };
 		B926054804182619124EC2779982648D /* Pods-Scriptable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98452D20818A9B6C1821D8FF8788D6CE /* Pods-Scriptable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD606AF122EB9DBC0075957E /* Kill+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD606AF022EB9DBC0075957E /* Kill+Task.swift */; };
+		DD606AF322EBA4840075957E /* KillOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD606AF222EBA4840075957E /* KillOptions.swift */; };
 		DDF833A922DA18CD0048C844 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF833A522DA17890048C844 /* Task.swift */; };
 		DDF833AA22DA18D90048C844 /* Network+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF833A722DA179D0048C844 /* Network+Task.swift */; };
 		DDF833AF22DA1D300048C844 /* App+Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF833AB22DA1CBA0048C844 /* App+Task.swift */; };
@@ -73,6 +75,8 @@
 		D3F567CC294B3575EA887F6692462F8F /* Pods-Scriptable_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Scriptable_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D7224B3D3FC92F6655473E6537E31F30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D886C1421B0224689BEAA6DA20B9BFCB /* Pods-Scriptable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scriptable_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DD606AF022EB9DBC0075957E /* Kill+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kill+Task.swift"; sourceTree = "<group>"; };
+		DD606AF222EBA4840075957E /* KillOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillOptions.swift; sourceTree = "<group>"; };
 		DDF833A522DA17890048C844 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		DDF833A722DA179D0048C844 /* Network+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Task.swift"; sourceTree = "<group>"; };
 		DDF833AB22DA1CBA0048C844 /* App+Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Task.swift"; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				DDF833AB22DA1CBA0048C844 /* App+Task.swift */,
 				DDF833B122DA1D770048C844 /* Directory+Task.swift */,
 				DDF833B322DA1EC90048C844 /* Custom+Task.swift */,
+				DD606AF022EB9DBC0075957E /* Kill+Task.swift */,
 			);
 			name = Task;
 			path = Scriptable/Classes/Task;
@@ -239,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				D0857057373A2A8EF38CCEBCA48AB646 /* Scriptable.swift */,
+				DD606AF222EBA4840075957E /* KillOptions.swift */,
 				DDF833AD22DA1CDC0048C844 /* Extensions.swift */,
 				DDF833B522DA2F0F0048C844 /* Task */,
 				A83E26E65BC19647DB99C4AFAB75D33F /* Pod */,
@@ -402,6 +408,8 @@
 				DDF833AF22DA1D300048C844 /* App+Task.swift in Sources */,
 				DDF833AA22DA18D90048C844 /* Network+Task.swift in Sources */,
 				DDF833B422DA1EC90048C844 /* Custom+Task.swift in Sources */,
+				DD606AF322EBA4840075957E /* KillOptions.swift in Sources */,
+				DD606AF122EB9DBC0075957E /* Kill+Task.swift in Sources */,
 				DDF833A922DA18CD0048C844 /* Task.swift in Sources */,
 				A918A0C379A901DF49F081C14765D65E /* Scriptable.swift in Sources */,
 			);

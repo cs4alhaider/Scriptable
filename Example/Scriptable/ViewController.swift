@@ -6,7 +6,6 @@
 //  Copyright (c) 2019 cs4alhaider. All rights reserved.
 //
 
-import Cocoa
 import Scriptable
 
 class ViewController: NSViewController {
