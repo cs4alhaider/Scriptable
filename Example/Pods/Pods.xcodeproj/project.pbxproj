@@ -210,6 +210,7 @@
 				DDF833B122DA1D770048C844 /* Directory+Task.swift */,
 				DDF833B322DA1EC90048C844 /* Custom+Task.swift */,
 				DD606AF022EB9DBC0075957E /* Kill+Task.swift */,
+				DD606AF222EBA4840075957E /* KillOptions.swift */,
 			);
 			name = Task;
 			path = Scriptable/Classes/Task;
@@ -244,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				D0857057373A2A8EF38CCEBCA48AB646 /* Scriptable.swift */,
-				DD606AF222EBA4840075957E /* KillOptions.swift */,
 				DDF833AD22DA1CDC0048C844 /* Extensions.swift */,
 				DDF833B522DA2F0F0048C844 /* Task */,
 				A83E26E65BC19647DB99C4AFAB75D33F /* Pod */,
